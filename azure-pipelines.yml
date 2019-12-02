@@ -39,7 +39,7 @@ stages:
   dependsOn: Build
 
   variables:
-  - name: k8sNamespace # Kubernetes Namespace to deploy to. This variable is scoped to the DeployDev stage.
+  - name: 'k8sNamespace' # Kubernetes Namespace to deploy to. This variable is scoped to the DeployDev stage.
     value: 'kube-system'
       
   jobs:
